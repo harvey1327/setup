@@ -1,5 +1,6 @@
 sudo snap install code --classic
-sudo apt install git vim fonts-powerline ca-certificates curl gnupg lsb-release -y
+sudo apt update
+sudo apt install git vim fonts-powerline ca-certificates curl zsh gnupg lsb-release -y
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="agnoster"/g' $HOME/.zshrc
 
