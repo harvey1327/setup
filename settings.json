@@ -1,7 +1,7 @@
 {
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Dark Modern",
     "editor.minimap.enabled": false,
-    "terminal.integrated.fontFamily": "monospace, PowerlineSymbols",
+    "workbench.editor.enablePreview": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.editor.enablePreview": false
+    "terminal.integrated.fontFamily": "monospace, PowerlineSymbols"
 }
