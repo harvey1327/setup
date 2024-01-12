@@ -1,5 +1,6 @@
 sudo apt update
 sudo apt upgrade -y
+sudo snap install kubectl --classic
 sudo snap install code --classic
 sudo snap install postman
 sudo snap install spotify
@@ -29,3 +30,7 @@ wget https://go.dev/dl/go1.19.1.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.1.linux-amd64.tar.gz
 rm -rf go1.19.1.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.zshrc
+
+[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-linux-amd64
+chmod +x kind
+sudo mv ./kind /usr/local/bin/kind
